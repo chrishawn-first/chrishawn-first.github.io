@@ -1,0 +1,49 @@
+#s1-heading {
+    font-family: fantasy;
+    text-align: center;
+}
+#s1-block1 {
+    background-color: #0c0c07;
+    color: white;
+    text-align: center;
+    padding: 24px;
+    font-family: fantasy;
+    font-size: large
+}
+#s1-block2 {
+    background-color:#7de713;
+    text-align: center;
+    padding: 24px;
+    font-family: fantasy;
+    font-size: large
+}
+#s1-block3 {
+    background-color:#f8f8ff;
+    text-align: center;
+    padding: 24px;
+    font-family: fantasy;
+    font-size: large
+}
+
+#s2-heading{
+    text-align: center;
+    font-family: cursive;
+}
+#s2-block2 {
+    background-color:#f4e39f;
+    text-align: center;
+    font-family: cursive;
+    font-size: 30px;
+    padding: 24px;
+}
+#s3-heading{
+    text-align: center;
+    font-family: monospace;
+}
+#s3-block3 {
+    background-color:#e9967a;
+    text-align: center;
+    font-family:monospace;
+    font-size: 10px;
+    padding: 24px;
+}
