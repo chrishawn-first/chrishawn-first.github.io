@@ -121,10 +121,15 @@ body {
 .metube-item .thumbnail {
     width: 100%;
     border-radius: 55% 0px;
-    border: 5px solid black;
+    border:5px solid chocolate;
     background-color: #a64b09;
 }
-
+ 
+#thumbnail /*figure out why the first & last picture need formatting*/{
+    min-height: 25%;
+    max-height: 280px
+    
+}
 /*Leaves*/
 
 .metube-item .leaf {
@@ -146,6 +151,25 @@ body {
     transform: rotate(4deg);
 }
 
+.metube-item:hover .leaf {
+    transform: rotate(5deg);
+    opacity: 0.35;
+}
+
+.metube-item:hover .leaf:first-child {
+    transform: rotate(5deg) ;
+    opacity: 0.35;
+}
+
+.metube-item-details {
+    display: flex;
+    border-left: 8px solid chocolate;
+    padding-top: 24px;
+    position: relative;
+    top: -8px;
+}
+
+
 .user-thumbnail {
     width: 50px;
     height: 50px;
@@ -154,6 +178,24 @@ body {
     border: 3PX solid chocolate;
     background-color: #a64b09;
 }
-.metube-item h4 a {
+.metube-item h4 {
     margin: 8px;
+}
+.metube-item h4 a {
+    text-decoration: none;
+    color: #703308;
+    display: block;
+}
+
+.metube-item h4 a:hover {
+    text-decoration: underline;
+}
+
+.metube-item .video-details {
+    margin: 8px;
+    font-size: 14px;
+}
+
+.metube-item .video-channel {
+    margin-bottom: 4px;
 }
