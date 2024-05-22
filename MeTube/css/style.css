@@ -1,0 +1,159 @@
+
+body {
+    margin: 0px;
+    font-family: Tahoma;
+    background-color:cornsilk;
+}
+
+/*grid setup*/
+
+#grid-layout {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas: 
+        "header header"
+        "sidebar main";
+}
+
+#header {
+    grid-area: header;
+    padding: 0px 24px;
+}
+
+#sidebar { 
+    grid-area: sidebar;
+    padding: 0px 24px;
+}
+
+#main {
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Header style*/
+#header a {
+    text-decoration: none;
+}
+
+#header #me {
+    color: #e46d17;
+}
+
+#header #tube{ 
+    color: black;
+    background-color: chocolate;
+    padding: 4px;
+    border-radius: 12px;
+}
+
+/*sidebar style*/
+#sidebar ul {
+    padding: 12px 0px;
+    margin: 0px;
+    list-style-type: none;
+    border-bottom: 1px solid #e46d17;
+}
+
+#sidebar ul:last-child {
+    padding: 12px 0px;
+    margin: 0px;
+    list-style-type: none;
+    border-bottom: 0px;
+}
+
+#sidebar ul a {
+    text-decoration: none;
+    color:#a64b09;
+    display: block;
+    padding: 12px;
+    font-size: 19px;
+}
+
+#sidebar ul a:hover {
+    background-color: burlywood;
+    color: aliceblue;
+    border-radius: 12px;
+}
+
+#sidebar ul .user-thumbnail{
+    vertical-align: middle;
+    width: 50px;
+}
+
+#sidebar ul a:hover .user-thumbnail {
+    border-color: burlywood;
+}
+
+#sidebar i {
+    display: inline-block;
+    font: 24px;
+    margin-right: 8px;
+}
+
+#sub-label {
+    margin-top: 24px;
+    margin-left: 12px;
+    font-size: 24px;
+    color:#703308;
+}
+
+/*Metube-items (video items)*/
+
+.metube-item {
+    flex: 250px;
+    min-width: 25%;
+    max-width: 350px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    position: relative ;
+}
+
+.metube-item:hover {
+    cursor: pointer;
+}
+
+.metube-item:hover a {
+    text-decoration: underline;;
+}
+
+.metube-item .leaf,
+.metube-item .thumbnail {
+    width: 100%;
+    border-radius: 55% 0px;
+    border: 5px solid black;
+    background-color: #a64b09;
+}
+
+/*Leaves*/
+
+.metube-item .leaf {
+    aspect-ratio: 16 / 9;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+    transform-origin: bottom left;
+    transition:
+        transform 0.5s,
+        opacity 0.5s;
+}
+
+.metube-item .leaf {
+    transform: rotate(-4deg) scale(0.95);
+}
+
+.metube-item .leaf:first-child {
+    transform: rotate(4deg);
+}
+
+.user-thumbnail {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 0px 45%;
+    border: 3PX solid chocolate;
+    background-color: #a64b09;
+}
+.metube-item h4 a {
+    margin: 8px;
+}
