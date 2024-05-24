@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: Cochin;
+}
+
+/*Centered Single column page layout*/
+#layout {
+    max-width: 800px;
+    margin: 48px auto;
+    text-align: center;
+}
+
+/*3-column grid with a border, 
+fitting the images to the width of the grid columns*/
+
+.basic-grid-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    border: 10px solid black;
+    gap: 10px;
+}
+
+.basic-grid-gallery img {
+    width: 100%;
+}
+
+
+
