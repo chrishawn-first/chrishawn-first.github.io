@@ -5,8 +5,8 @@
     margin: 16px;
     position: relative;
     transition: 
-    transform 0.25s
-    box-shadown 0.25s;
+    transform 0.25s ease, 
+    box-shadow 0.25s ease;
 }
 
 .card-style-1:hover {
@@ -39,6 +39,7 @@
     text-align: center;
     color: antiquewhite;
     transition: opacity 0.25s;
+    border: 3px solid green;
 }
 
 .card-style-1 a:hover {
